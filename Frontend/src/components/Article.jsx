@@ -3,6 +3,7 @@
 import { useNavigate } from "react-router-dom"
 import { useSetRecoilState } from "recoil"
 import { AllArticlesAtom, EditArticleAtom, ReadmoreAtom } from "../store/atoms/states"
+import { Nav } from "./Nav"
 
 export function Article({Article}) {
     const Navigate = useNavigate()

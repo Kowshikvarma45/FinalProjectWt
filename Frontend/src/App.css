@@ -1,11 +1,10 @@
-/* Navbar styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffffc9;
+    background-color: #1d1b1b9a;
     padding: 10px 20px;
-    color: rgb(1, 1, 1);
+    color: rgb(250, 250, 250);
     margin-bottom: 20px;
 }
 
@@ -16,7 +15,7 @@
     margin: 0;
     
     font-size: 24px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 .navbar h1:hover{
     color: rgb(0, 0, 0);
@@ -26,6 +25,7 @@
 
 .navbar button {
     background-color: white;
+    margin: 4px;
     color: #4CAF50;
     border: none;
     padding: 10px 20px;
@@ -42,16 +42,16 @@
     background-color: #45a049;
     color: white;
 }
-.navbar.img {
+/* .navbar.img {
     background-image: url(Screenshot\ 2024-06-02\ 185959.png);
-}
+} */
 
 /* General styles for the app */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(14, 48, 61);
+    background-color: rgb(0, 5, 38);
 }
 
 h1, h2, h3 {
@@ -61,7 +61,6 @@ h1, h2, h3 {
     color: #333;
 }
 
-/* Container for each section */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -74,7 +73,6 @@ h1, h2, h3 {
     transform: scale(1.05);
 }
 
-/* Form styles */
 textarea {
     width: 100%;
     padding: 10px;
@@ -85,7 +83,6 @@ textarea {
     resize: vertical;
 }
 
-/* Article styles */
 .article {
     margin-bottom: 20px;
 }
@@ -105,14 +102,12 @@ textarea {
     color: #444;
 }
 
-/* Button container for actions */
 .button-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-/* Adjust button styles in different contexts */
 .button-container button {
     flex: 1;
     margin: 5px;

@@ -14,7 +14,6 @@ app.put('/Readmore',(req,res)=>{
 
 app.get('/AllArticles',(req,res)=>{
     BlogdbModel.find({}).then((val)=>{
-        console.log(val)
         res.json(val)
     })
 })

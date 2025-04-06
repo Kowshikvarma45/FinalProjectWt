@@ -16,12 +16,7 @@ function App() {
       <RecoilRoot>
         <BrowserRouter>
         <Routes>
-          <Route path='/' element={<div>
-            <Nav></Nav>
-            <center><h1 style={{color:'whitesmoke'}}>Created Articles</h1></center>
-            <AllArticles></AllArticles>
-          </div>
-          }></Route>
+          <Route path='/' element={<AllArticles></AllArticles>}></Route>
           <Route path = '/ReadMore' element={<Readmore/>}></Route>
           <Route path = '/CreateArticle' element={<CreateArticle/>}></Route>
           <Route path = '/EditArticle' element={<EditArticle />}></Route>

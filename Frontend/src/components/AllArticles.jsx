@@ -2,6 +2,7 @@ import { useRecoilState } from "recoil";
 import { AllArticlesAtom } from "../store/atoms/states";
 import { useEffect } from "react";
 import { Article } from "./Article";
+import { Nav } from "./Nav";
 
 export function AllArticles() {
     const [all, setAll] = useRecoilState(AllArticlesAtom);
@@ -29,6 +30,7 @@ export function AllArticles() {
 
     return (
         <div>
+            <Nav></Nav>
             {all.map((val) => (
                 <Article key={val._id} Article={val} />
             ))}
