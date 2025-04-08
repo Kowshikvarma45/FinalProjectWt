@@ -48,7 +48,6 @@ export function CreateArticle() {
     }
     return   (
             <div className="container">
-            <Nav></Nav>
             <h1>Create Article</h1>
             <h2>Title of the Article :</h2>
             <textarea ref={titleref} placeholder="Title" cols="50" rows="1"></textarea>
