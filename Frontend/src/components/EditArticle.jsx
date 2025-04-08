@@ -19,7 +19,7 @@ export function EditArticle() {
             alert("Fill out all the fields")
             return
         }
-        fetch("http://localhost:3003/Edit",{
+        fetch("https://finalprojectwt.onrender.com/Edit",{
             method:"put",
             body:JSON.stringify({
                 id:id,

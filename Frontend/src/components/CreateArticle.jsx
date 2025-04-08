@@ -27,7 +27,7 @@ export function CreateArticle() {
             title:title,
             description:description
         }])
-        fetch("http://localhost:3003/NewArticle",{
+        fetch("https://finalprojectwt.onrender.com/NewArticle",{
             method:"post",
             body:JSON.stringify({
                 title:title,

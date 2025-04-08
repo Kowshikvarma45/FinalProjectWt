@@ -8,7 +8,7 @@ export function AllArticles() {
     const [all, setAll] = useRecoilState(AllArticlesAtom);
 
     useEffect(() => {
-        fetch("http://localhost:3003/AllArticles")
+        fetch("https://finalprojectwt.onrender.com/AllArticles")
             .then((response) => {
                 if (!response.ok) {
                     throw new Error("Network response was not ok");

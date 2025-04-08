@@ -26,7 +26,7 @@ export function Article({Article}) {
     function deleteClicked() {
         const userprompt = prompt("Are you sure you want to delete? Enter 'yes' to delete")
         if (userprompt !== null) {
-            fetch("http://localhost:3003/delete",{
+            fetch("https://finalprojectwt.onrender.com/delete",{
             method:"put",
             body:JSON.stringify({
                 id:Article._id
@@ -37,7 +37,7 @@ export function Article({Article}) {
         }).then(async(val)=>{
             const res = await val.json()
             alert(res.msg)
-            fetch("http://localhost:3003/AllArticles",{
+            fetch("https://finalprojectwt.onrender.com/AllArticles",{
                 method:"get"
             }).then(async(response)=>{
                 if(!response.ok) {
