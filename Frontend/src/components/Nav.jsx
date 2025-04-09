@@ -4,7 +4,7 @@ export function Nav() {
     const Navigate = useNavigate()
     return (
         <div className="navbar">
-            <h1>VBlog</h1><br />
+            <h1>NoteMaker</h1><br />
             <div>
             <button onClick={()=>{
                 Navigate('/Aboutus')
